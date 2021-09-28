@@ -32,16 +32,16 @@ checkboxBtn.addEventListener('change', e => {
   }
 });
 
-// let theme = localStorage.getItem('theme') || LIGHT;
-// document.body.classList.remove(theme);
-// checkboxBtn.checked = theme === DARK;
+let theme = localStorage.getItem('theme') || LIGHT;
+document.body.classList.add(theme);
+checkboxBtn.checked = theme === DARK;
 
-let theme = localStorage.getItem('theme');
+// let theme = localStorage.getItem('theme');
 
-if (theme === DARK) {
-  document.querySelector('body').classList.add(DARK);
-  checkboxBtn.checked = true;
-} else {
-  document.querySelector('body').classList.add(LIGHT);
-  checkboxBtn.checked = false;
-}
+// if (theme === DARK) {
+//   document.querySelector('body').classList.add(DARK);
+//   checkboxBtn.checked = true;
+// } else {
+//   document.querySelector('body').classList.add(LIGHT);
+//   checkboxBtn.checked = false;
+// }
